@@ -3,7 +3,7 @@
   <div>
     <SectionGreeting />
     <SectionProjects />
-    <!-- <SectionGithub /> -->
+    <SectionGithub />
     <SectionResume />
     <SectionAbout />
   </div>
