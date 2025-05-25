@@ -96,7 +96,7 @@ const projects = [
     title: "MY Portfolio (2025)",
     description:
       "This is my portfolio website built with Nuxt 3 and Tailwind CSS. It showcases my skills and projects. You can find my projects and contact information here.",
-    projectUrl: "https://nuxt-portfolio-2025.vercel.app",
+    projectUrl: "https://portfolio-mohamed-sokar.vercel.app",
     imageUrl: "/images/my-portfolio.png",
     techniechs: [
       techniechsName.NUXT,
