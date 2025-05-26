@@ -35,20 +35,43 @@
           About
         </NuxtLink>
       </nav>
-
-      <NuxtLink to="mailto:aboomarsokar@gmail.com">
-        <UButton
-          icon="heroicons-envelope"
-          size="md"
-          color="secondary"
-          variant="solid"
-          >Contact</UButton
-        >
-      </NuxtLink>
+      <div class="flex items-center gap-4">
+        <ClientOnly v-if="!colorMode?.forced">
+          <USwitch
+            unchecked-icon="i-lucide-sun"
+            checked-icon="i-lucide-moon"
+            :default-value="false"
+            color="secondary"
+            size="xl"
+            @click="isDark = !isDark"
+            class="hover:cursor-pointer"
+          />
+        </ClientOnly>
+        <NuxtLink to="mailto:aboomarsokar@gmail.com">
+          <UButton
+            icon="heroicons-envelope"
+            size="md"
+            color="secondary"
+            variant="solid"
+            >Contact</UButton
+          >
+        </NuxtLink>
+      </div>
     </UICustomContainer>
   </header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const colorMode = useColorMode();
+const isDark = computed({
+  get() {
+    console.log(colorMode.preference);
+    return colorMode.value === "dark";
+  },
+  set(_isDark) {
+    colorMode.preference = _isDark ? "dark" : "light";
+  },
+});
+</script>
 
 <style scoped></style>
