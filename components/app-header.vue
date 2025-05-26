@@ -72,6 +72,22 @@ const isDark = computed({
     colorMode.preference = _isDark ? "dark" : "light";
   },
 });
+
+// i need to make shadow on header when scroll y > 0
+
+const header = ref<HTMLElement | null>(null);
+onMounted(() => {
+  header.value = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (header.value) {
+      if (window.scrollY > 0) {
+        header.value.classList.add("shadow-lg");
+      } else {
+        header.value.classList.remove("shadow-lg");
+      }
+    }
+  });
+});
 </script>
 
 <style scoped></style>
