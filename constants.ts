@@ -63,6 +63,34 @@ const projects = [
   },
   {
     id: 4,
+    title: "Vue-Task-Manager (2025)",
+    description:
+      " The Vue settings is a responsive website built with Vue 3, TS and localstorage.",
+    projectUrl: "https://task-manager-mohamed-sokar.netlify.app",
+    imageUrl: "/images/task-manager.png",
+    techniechs: [
+      techniechsName.VUE,
+      techniechsName.TS,
+      techniechsName.LOCALSTORAGE,
+    ],
+    type: "frontend",
+  },
+  {
+    id: 5,
+    title: "Vue-trello-clone (2025)",
+    description:
+      " The Vue settings is a responsive website built with Vue 3, TS and localstorage.",
+    projectUrl: "https://vue-settings-2025-mohammad-sokar.netlify.app",
+    imageUrl: "/images/trello-clone.png",
+    techniechs: [
+      techniechsName.VUE,
+      techniechsName.TS,
+      techniechsName.LOCALSTORAGE,
+    ],
+    type: "frontend",
+  },
+  {
+    id: 6,
     title: "Finance Tracker (2025)",
     description:
       "The Finance Tracker is a resbonsive website Built with Nuxt 3, Tailwind CSS and Supabase.",
@@ -77,7 +105,7 @@ const projects = [
     type: "fullstack",
   },
   {
-    id: 5,
+    id: 7,
     title: "Portfolio (2025)",
     description:
       "The Portfolio is a responsive website Built with Nuxt 3 and Tailwind CSS.",
@@ -92,7 +120,7 @@ const projects = [
     type: "frontend",
   },
   {
-    id: 6,
+    id: 8,
     title: "MY Portfolio (2025)",
     description:
       "This is my portfolio website built with Nuxt 3 and Tailwind CSS. It showcases my skills and projects. You can find my projects and contact information here.",
