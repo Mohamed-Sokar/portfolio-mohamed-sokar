@@ -1,7 +1,7 @@
 <template>
   <section class="px-3 sm:px-0 pt-20 mb-20" id="projects">
     <UICustomContainer>
-      <h2 class="font-bold text-3xl sm:text-5xl text-secondary-600 mb-3">
+      <h2 class="font-bold text-3xl sm:text-5xl text-secondary mb-3">
         Projects
       </h2>
       <p class="text-gray-600 dark:text-gray-400 sm:text-xl">

@@ -4,7 +4,7 @@
     id="github"
   >
     <UICustomContainer>
-      <h2 class="font-bold text-3xl sm:text-5xl text-secondary-600 mb-3">
+      <h2 class="font-bold text-3xl sm:text-5xl text-secondary mb-3">
         GitHub Repositories
       </h2>
       <p class="text-gray-600 dark:text-gray-400 sm:text-xl">
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div
-          class="flex items-center justify-start gap-1 mt-4 mb-1 text-secondary-600-600 font-semibold"
+          class="flex items-center justify-start gap-1 mt-4 mb-1 text-secondary-600 font-semibold"
         >
           <div>Scroll down</div>
           <UIcon name="heroicons-arrow-down-20-solid" />
