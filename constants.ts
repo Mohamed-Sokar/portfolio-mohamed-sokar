@@ -80,7 +80,7 @@ const projects = [
     title: "Vue-trello-clone (2025)",
     description:
       " The Vue settings is a responsive website built with Vue 3, TS and localstorage.",
-    projectUrl: "https://vue-settings-2025-mohammad-sokar.netlify.app",
+    projectUrl: "https://vue-trello-clone-2025.netlify.app",
     imageUrl: "/images/trello-clone.png",
     techniechs: [
       techniechsName.VUE,
