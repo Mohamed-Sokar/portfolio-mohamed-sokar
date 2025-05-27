@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 px-3 bg-secondary-50 dark:bg-secondary-950">
+  <section class="py-20 bg-secondary-50 dark:bg-secondary-950">
     <UICustomContainer class="grid grid-cols-1 md:grid-cols-3 gap-10">
       <div class="flex justify-center items-center">
         <img

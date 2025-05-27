@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 px-3 z-50 w-full border-b border-gray-200 dark:border-gray-600 backdrop-blur-md dark:shadow-gray-600"
+    class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-600 backdrop-blur-md dark:shadow-gray-600"
   >
     <UICustomContainer class="flex h-16 items-center justify-between">
       <NuxtLink

@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="px-3 py-20 bg-secondary-50 dark:bg-secondary-950">
+  <section id="about" class="py-20 bg-secondary-50 dark:bg-secondary-950">
     <UICustomContainer>
       <h2 class="font-bold text-3xl sm:text-5xl text-secondary mb-3">
         About Me

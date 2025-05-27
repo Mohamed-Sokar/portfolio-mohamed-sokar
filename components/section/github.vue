@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mb-20 px-3 py-20 bg-secondary-50 dark:bg-secondary-950"
+    class="mb-20 py-20 bg-secondary-50 dark:bg-secondary-950"
     id="github"
   >
     <UICustomContainer>
