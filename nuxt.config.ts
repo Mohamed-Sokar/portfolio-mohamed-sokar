@@ -25,5 +25,9 @@ export default defineNuxtConfig({
       },
     ],
   ],
-  css: ["~/assets/css/main.css"],
+  css: [
+    "~/assets/css/main.css",
+    "nprogress/nprogress.css",
+    "@/assets/css/nprogress-custom.css",
+  ],
 });
