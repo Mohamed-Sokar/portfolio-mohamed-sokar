@@ -13,17 +13,17 @@ const color = useColorMode();
 color.preference = "system";
 useHead({
   titleTemplate: "Portfolio - %s",
-  link: [
-    {
-      rel: "preconnect",
-      href: "https:fonts.googlepis.com",
-    },
-    {
-      rel: "stylesheet",
-      href: "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap",
-      crossorigin: "",
-    },
-  ],
+  // link: [
+  //   {
+  //     rel: "preconnect",
+  //     href: "https:fonts.googlepis.com",
+  //   },
+  //   {
+  //     rel: "stylesheet",
+  //     href: "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap",
+  //     crossorigin: "",
+  //   },
+  // ],
 });
 </script>
 
