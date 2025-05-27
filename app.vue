@@ -1,7 +1,9 @@
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage />
+      <FadeTransition>
+        <NuxtPage />
+      </FadeTransition>
     </NuxtLayout>
   </div>
 </template>

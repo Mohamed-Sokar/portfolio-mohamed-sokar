@@ -4,32 +4,38 @@
   >
     <UICustomContainer class="flex h-16 items-center justify-between">
       <NuxtLink
-        href="/"
-        class="font-bold text-xl text-secondary transition-colors hover:text-secondary/80"
+        to="/"
+        class="logo font-bold text-xl text-secondary transition-colors hover:text-secondary/80"
       >
         Portfolio
       </NuxtLink>
       <nav class="hidden md:flex items-center gap-6">
         <NuxtLink
-          href="#projects"
+          to="/"
+          class="text-sm font-semibold hover:text-secondary border-b hover:border-b-2 border-b-gray-200 dark:border-gray-600 py-[22.5px] hover:border-secondary transition-colors"
+        >
+          Main
+        </NuxtLink>
+        <NuxtLink
+          to="/projects"
           class="text-sm font-semibold hover:text-secondary border-b hover:border-b-2 border-b-gray-200 dark:border-gray-600 py-[22.5px] hover:border-secondary transition-colors"
         >
           Projects
         </NuxtLink>
         <NuxtLink
-          href="#github"
+          to="/github"
           class="text-sm font-semibold hover:text-secondary border-b hover:border-b-2 border-b-gray-200 dark:border-gray-600 py-[22.5px] hover:border-secondary transition-colors"
         >
           GitHub
         </NuxtLink>
         <NuxtLink
-          href="#resume"
+          to="/resume"
           class="text-sm font-semibold hover:text-secondary border-b hover:border-b-2 border-b-gray-200 dark:border-gray-600 py-[22.5px] hover:border-secondary transition-colors"
         >
           Resume
         </NuxtLink>
         <NuxtLink
-          href="#about"
+          to="/about"
           class="text-sm font-semibold hover:text-secondary border-b hover:border-b-2 border-b-gray-200 dark:border-gray-600 py-[22.5px] hover:border-secondary transition-colors"
         >
           About
@@ -64,7 +70,6 @@
 const colorMode = useColorMode();
 const isDark = computed({
   get() {
-    console.log(colorMode.preference);
     return colorMode.value === "dark";
   },
   set(_isDark) {
@@ -88,4 +93,10 @@ onMounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.router-link-active:not(.logo) {
+  color: oklch(62.3% 0.214 259.815);
+  border-bottom: 2px solid oklch(62.3% 0.214 259.815);
+  font-weight: bold;
+}
+</style>

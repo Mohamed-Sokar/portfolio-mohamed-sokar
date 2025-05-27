@@ -1,5 +1,5 @@
 <template>
-  <section class="py-6 border-t border-t-gray-200 dark:border-t-gray-500">
+  <footer class="py-6 border-t border-t-gray-200 dark:border-t-gray-500">
     <UICustomContainer>
       <div class="flex flex-col sm:flex-row gap-4 justify-between items-center">
         <div class="text-muted text-sm">
@@ -15,7 +15,7 @@
         </div>
       </div>
     </UICustomContainer>
-  </section>
+  </footer>
 </template>
 
 <script setup lang="ts"></script>

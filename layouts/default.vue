@@ -12,7 +12,7 @@
 const color = useColorMode();
 color.preference = "system";
 useHead({
-  titleTemplate: "%s - Mohammad Sokar",
+  titleTemplate: "Portfolio - %s",
   link: [
     {
       rel: "preconnect",
@@ -20,7 +20,6 @@ useHead({
     },
     {
       rel: "stylesheet",
-      // href: "https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap",
       href: "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap",
       crossorigin: "",
     },
@@ -33,8 +32,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Roboto";
-
-  /*@apply dark:bg-gray-900 bg-white;*/
+  font-family: "Poppins", "Roboto Condensed", "Inter", sans-serif;
+}
+section {
+  min-height: calc(100vh - (75.5px + 65px));
 }
 </style>
