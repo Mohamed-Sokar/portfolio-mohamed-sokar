@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="mb-20 py-20 bg-secondary-50 dark:bg-secondary-950"
-    id="github"
-  >
+  <section class="py-20 bg-secondary-50 dark:bg-secondary-950" id="github">
     <UICustomContainer>
       <h2 class="font-bold text-3xl sm:text-5xl text-secondary mb-3">
         GitHub Repositories
