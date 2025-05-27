@@ -6,12 +6,19 @@
           &copy; 2025 Mohammad Sokar. All rights reserved.
         </div>
         <div class="flex items-center gap-3">
-          <a href="#" class="hover:text-secondary">
+          <NuxtLink
+            href="https://github.com/Mohamed-Sokar?tab=repositories"
+            target="_blank"
+            class="hover:text-secondary"
+          >
             <UIcon name="fa6-brands-github-alt" class="size-5" />
-          </a>
-          <a href="mailto:aboomarsokar@gmail.com" class="hover:text-secondary">
+          </NuxtLink>
+          <NuxtLink
+            href="mailto:aboomarsokar@gmail.com"
+            class="hover:text-secondary"
+          >
             <UIcon name="heroicons-envelope" class="size-5" />
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </UICustomContainer>

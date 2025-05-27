@@ -23,7 +23,7 @@
           </p>
         </div>
         <div class="flex justify-center items-center mt-8 gap-4 flex-wrap">
-          <a href="#projects">
+          <NuxtLink to="/projects">
             <UButton
               class="font-bold"
               trailing-icon="fa6-solid-arrow-right"
@@ -32,8 +32,8 @@
               variant="solid"
               >View my work</UButton
             >
-          </a>
-          <a href="#github">
+          </NuxtLink>
+          <NuxtLink href="/github">
             <UButton
               color="neutral"
               icon="fa6-brands-github-alt"
@@ -41,7 +41,7 @@
               size="lg"
               >GitHub</UButton
             >
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </UICustomContainer>
