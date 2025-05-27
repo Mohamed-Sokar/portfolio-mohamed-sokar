@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mb-20 px-3 sm:px-0 py-20 bg-secondary-50 dark:bg-secondary-950"
+    class="mb-20 px-3 py-20 bg-secondary-50 dark:bg-secondary-950"
     id="github"
   >
     <UICustomContainer>
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="flex justify-between items-center">
-          <div class="text-muted">{{ reposLength ?? 15 }} projects</div>
+          <div class="text-muted">{{ reposLength ?? 0 }} projects</div>
 
           <div>
             <a
@@ -37,13 +37,18 @@
         </div>
         <div
           class="flex items-center justify-start gap-1 mt-4 mb-1 text-secondary-600 font-semibold"
+          v-if="repos.length"
         >
           <div>Scroll down</div>
           <UIcon name="heroicons-arrow-down-20-solid" />
         </div>
 
-        <div class="grid gap-3 h-80 scroll-auto overflow-scroll">
+        <div
+          class="grid gap-3 h-80 scroll-auto overflow-scroll"
+          v-if="repos.length"
+        >
           <UICustomCard
+            v-if="repos"
             v-for="repo in repos"
             :key="repo.id"
             class="p-2 font-bold"
@@ -74,8 +79,8 @@ const fetchRepos = async () => {
   const { data } = await useFetch(
     "https://api.github.com/users/Mohamed-Sokar/repos"
   );
-  console.log(data.value);
-  repos.value = data.value;
+  // console.log(data.value);
+  repos.value = data.value ?? [];
 };
 await fetchRepos();
 // repos.value = await fetchRepos();

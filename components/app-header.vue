@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-600 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:shadow-gray-600"
+    class="sticky top-0 px-3 z-50 w-full border-b border-gray-200 dark:border-gray-600 backdrop-blur-md dark:shadow-gray-600"
   >
     <UICustomContainer class="flex h-16 items-center justify-between">
       <NuxtLink
@@ -40,11 +40,10 @@
           <USwitch
             unchecked-icon="i-lucide-sun"
             checked-icon="i-lucide-moon"
-            :default-value="false"
+            :default-value="isDark"
             color="secondary"
             size="xl"
             @click="isDark = !isDark"
-            class="hover:cursor-pointer"
           />
         </ClientOnly>
         <NuxtLink to="mailto:aboomarsokar@gmail.com">
@@ -73,8 +72,7 @@ const isDark = computed({
   },
 });
 
-// i need to make shadow on header when scroll y > 0
-
+// to show header shadow when scroll
 const header = ref<HTMLElement | null>(null);
 onMounted(() => {
   header.value = document.querySelector("header");

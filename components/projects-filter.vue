@@ -22,21 +22,21 @@ const clickHandler = (name: string) => {
 <template>
   <div class="mt-10 flex gap-4">
     <UButton
-      class="rounded-full text-sm sm:text-lg"
+      class="rounded-full text-sm font-bold"
       color="secondary"
       :variant="isActive === 'all' ? 'solid' : 'outline'"
       @click="clickHandler('all')"
       >All</UButton
     >
     <UButton
-      class="rounded-full text-sm sm:text-lg"
+      class="rounded-full text-sm font-bold"
       color="secondary"
       :variant="isActive === 'frontend' ? 'solid' : 'outline'"
       @click="clickHandler('frontend')"
       >Frontend</UButton
     >
     <UButton
-      class="rounded-full text-sm sm:text-lg"
+      class="rounded-full text-sm font-bold"
       color="secondary"
       :variant="isActive === 'fullstack' ? 'solid' : 'outline'"
       @click="clickHandler('fullstack')"

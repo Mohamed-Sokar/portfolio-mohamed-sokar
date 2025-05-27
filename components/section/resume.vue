@@ -1,5 +1,5 @@
 <template>
-  <section id="resume" class="px-3 sm:px-0 py-20">
+  <section id="resume" class="px-3 py-20">
     <UICustomContainer>
       <h2 class="font-bold text-3xl sm:text-5xl text-secondary mb-3">Resume</h2>
       <p class="text-gray-600 dark:text-gray-400 sm:text-xl mb-10">
