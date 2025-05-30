@@ -3,7 +3,7 @@
     <UICustomContainer class="grid grid-cols-1 md:grid-cols-3 gap-10">
       <div class="flex justify-center items-center">
         <img
-          src="~/public/images/my-photo.JPG"
+          src="~/public/images/my-photo2.png"
           alt="My photo"
           class="h-100 md:h-80 lg:h-100 xl:h-140 w-auto rounded-full object-contain"
         />
