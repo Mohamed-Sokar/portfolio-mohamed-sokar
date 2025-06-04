@@ -1,12 +1,28 @@
 <script setup lang="ts">
 import { type projectType } from "~/types";
+import { useIntersectionObserver } from "@vueuse/core";
 const props = defineProps<{
   project: projectType;
 }>();
+
+const cardRef = ref(null);
+const isVisible = ref(false);
+
+useIntersectionObserver(cardRef, ([{ isIntersecting }]) => {
+  if (isIntersecting) isVisible.value = true;
+});
 </script>
 
 <template>
-  <a :href="props.project.projectUrl" target="_blank">
+  <a
+    :href="props.project.projectUrl"
+    target="_blank"
+    ref="cardRef"
+    :class="[
+      'transition-all duration-500 ease-in-out',
+      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-15',
+    ]"
+  >
     <UICustomCard class="relative pb-10 w-full h-full" shadow translate-y>
       <div class="w-full h-70 rounded-md">
         <img
