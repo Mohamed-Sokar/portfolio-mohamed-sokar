@@ -12,7 +12,7 @@
         <div class="flex flex-col items-center text-center">
           <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold">
             Hi, I'm
-            <span class="text-secondary ms-2"> Mohammad Sokar </span>
+            <span class="text-secondary ms-2"> {{ displayed }} </span>
           </h1>
           <p
             class="text-center max-w-[700px] text-sm sm:text-lg text-gray-600 dark:text-gray-400 md:text-xl mt-2 px-3"
@@ -49,10 +49,14 @@
 </template>
 
 <script setup lang="ts">
+import { useTypeWriter } from "~/composables/useTypeWriter";
+
 useSeoMeta({
   title: "Main",
   description: "",
 });
+
+const { displayed } = useTypeWriter("Mohammad S. A. Sokar");
 </script>
 
 <style scoped></style>
